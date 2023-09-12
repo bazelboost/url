@@ -6,6 +6,7 @@ cc_library(
     name = "boost.url",
     hdrs = glob(["include/**/*.hpp"]),
     srcs = glob(["src/**/*.cpp"]),
+    defines = ["BOOST_URL_NO_LIB"],
     includes = ["include"],
     deps = [
         "@boost.align",
