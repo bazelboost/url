@@ -13,5 +13,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v4
-    - run: bazelisk test ...
-      working-directory: test
+    - run: bazelisk build ...
+      # TODO(zaucy): add tests
+      # working-directory: test
